@@ -52,11 +52,13 @@ const TopicSelector = () => {
           />
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'right' }}>
-        <span style={{ outline: 'aqua solid 3px', padding: '0.5rem 1rem', borderRadius: '100rem' }}>
-          Submit <i className="bi bi-arrow-right"></i>
-        </span>
-      </div>
+      <a href="/campaignlist" style={{ color: 'inherit' }}>
+        <div style={{ display: 'flex', justifyContent: 'right' }}>
+          <span style={{ outline: 'aqua solid 3px', padding: '0.5rem 1rem', borderRadius: '100rem' }}>
+            Submit <i className="bi bi-arrow-right"></i>
+          </span>
+        </div>
+      </a>
     </div>
   );
 };

@@ -5,8 +5,9 @@
 // Algorithms:
 // Problem Solving:
 
+import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart } from 'recharts';
+
 import React from 'react';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 
 const SkillChart = () => {
   // Sample data
@@ -22,7 +23,7 @@ const SkillChart = () => {
     <RadarChart height={500} width={750} outerRadius="80%" data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="name" />
-      <PolarRadiusAxis domain={[0, 100]} tick={false} stroke={false} />
+      <PolarRadiusAxis domain={[0, 100]} tick={false} stroke={null} />
       <Radar dataKey="x" strokeWidth="2px" stroke="lightblue" fill="Blue" fillOpacity={0.5} />
     </RadarChart>
   );

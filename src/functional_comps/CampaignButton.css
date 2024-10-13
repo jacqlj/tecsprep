@@ -4,9 +4,6 @@
   max-width: 45rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #2E3192;
-  border-color: #a0a08a88;
-  border: solid 4px;
   border-radius: 10px;
   margin: 0 auto;
   padding: 0;
@@ -14,10 +11,8 @@
 }
 
 .div-content {
-
   display: flex;
   align-items: center;
-
 }
 
 .image {

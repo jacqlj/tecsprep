@@ -1,10 +1,11 @@
-function CourseButton({ category, color, title, completed }) {
+function CourseButton({ category, color, title, completed, href }) {
   category ??= 'category';
   color ??= '#2E3192';
   title ??= 'Course Title';
+  href ??= '#';
 
   return (
-    <a href="" style={{ color: 'inherit' }}>
+    <a href={href} style={{ color: 'inherit' }}>
       <div
         style={{
           display: 'flex',

@@ -8,8 +8,8 @@ const Question = (props) => {
   const QuestionText = props.QuestionText;
   return (
     <div>
-      <label>{QuestionName}</label>
-      <p>{QuestionText}</p>
+      <h3>{QuestionName}</h3>
+      <h4>{QuestionText}</h4>
     </div>
   );
 };

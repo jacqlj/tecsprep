@@ -2,9 +2,11 @@ import './App.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import CampaignListView from './structural_comps/CampaignListView';
+import CampaignView from './structural_comps/CampaignView';
+import CourseView from './structural_comps/CourseView';
 import Navbar from './Navbar';
 import ProfileView from './structural_comps/ProfileView';
-import RouteView from './structural_comps/RouteView';
 import TopicSelector from './structural_comps/TopicSelector';
 import { useState } from 'react';
 
@@ -18,6 +20,9 @@ function App() {
         <Routes>
           <Route index element={<TopicSelector />}></Route>
           <Route path="/profile" element={<ProfileView />}></Route>
+          <Route path="/campaign" element={<CampaignView />}></Route>
+          <Route path="/campaignlist" element={<CampaignListView />}></Route>
+          <Route path="/course" element={<CourseView />}></Route>
         </Routes>
       </BrowserRouter>
     </>
